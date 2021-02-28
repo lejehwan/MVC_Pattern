@@ -18,7 +18,6 @@ public class ListBoardCommand implements BoardCommandIf{
 		try {
 			list = dao.listBoard();
 		}catch(SQLException e) {
-			System.out.println("list 실행 중 오류 발생!!");
 			e.printStackTrace();
 		}
 		req.setAttribute("list", list);

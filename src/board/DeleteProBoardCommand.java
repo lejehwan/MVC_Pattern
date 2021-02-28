@@ -24,13 +24,13 @@ public class DeleteProBoardCommand implements BoardCommandIf{
 		}
 		String msg = null, url = null;
 		if (res>0) {
-			msg ="글삭제 성공!! 글목록페이지로 이동합니다.";
+			msg ="success.";
 			url = "list.board";
 		}else if (res<0) {
-			msg ="비밀번호가 틀렸습니다. 다시 입력해 주세요!!";
+			msg ="fail";
 			url = "writeForm.board?num="+num;
 		}else {
-			msg ="글삭제 실패!! 글보기페이지로 이동합니다.";
+			msg ="db error";
 			url = "content.board?num="+num;
 		}
 		req.setAttribute("msg", msg);

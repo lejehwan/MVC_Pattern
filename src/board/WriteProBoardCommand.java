@@ -24,15 +24,15 @@ public class WriteProBoardCommand implements BoardCommandIf {
 		try {
 			int res = dao.insertBoard(dto);
 			if (res>0) {
-				msg = "게시글등록성공!! 게시글목록페이지로 이동합니다.";
+				msg = "success.";
 				url = "list.board";
 			}else {
-				msg = "게시글등록실패!! 게시글등록페이지로 이동합니다.";
+				msg = "fail";
 				url = "writeForm.board";
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
-			msg = "게시글등록페이지 실행 중 DB서버 오류 발생!!";
+			msg = "db error";
 			url = "list.board";
 		}
 		req.setAttribute("msg", msg);
