@@ -1,0 +1,11 @@
+<Resource type="javax.sql.DataSource" 
+name="jdbc/oracle" 
+auth="Container"
+driverClassName="oracle.jdbc.driver.OracleDriver" 
+url="jdbc:oracle:thin:@localhost:1521:xe" 
+username="spring02"
+password="spring02" 
+maxAction="20" 
+maxIdle="10" 
+maxWait="-1" 
+/>
