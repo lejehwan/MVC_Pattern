@@ -6,6 +6,6 @@ M : DTO,DAO
 V : jsp   
 C : servlet                   
 
-index.jsp -> BoardServlet(cmd) -> CommandFactory(cmdIf)     
-          -> BoardServlet(cmdif) -> 해당Command(nextPage)     
+index.jsp -> BoardServlet(cmd) -> CommandFactory(cmdIf)               
+          -> BoardServlet(cmdif) -> 해당Command(nextPage)               
           -> BoardServlet(nextPage) -> 해당page가 실행(View)
