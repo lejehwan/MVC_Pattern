@@ -11,7 +11,6 @@ public class WriteFormBoardCommand implements BoardCommandIf{
 	@Override
 	public Object processCommand(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		return "WEB-INF/jsp/board/writeForm.jsp";
 	}
 

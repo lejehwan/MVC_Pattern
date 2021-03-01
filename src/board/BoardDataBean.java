@@ -19,7 +19,6 @@ public class BoardDataBean {
 			Context init = new InitialContext();
 			ds = (DataSource)init.lookup("java:comp/env/jdbc/oracle");
 		}catch(NamingException e){
-			System.err.println("lookup½ÇÆÐ : " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

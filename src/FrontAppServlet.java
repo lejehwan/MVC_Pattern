@@ -21,16 +21,10 @@ public class FrontAppServlet extends HttpServlet{
 		String nextPage = null;
 		if (cmd.equals("/board.do")) {
 			nextPage = "list.board";
-		}else if (cmd.equals("/member.do")) {
-			nextPage = "index.mem";
-		}else if (cmd.equals("/login.do")) {
-			nextPage = "WEB-INF/jsp/login/login.jsp";
 		}
 		
 		RequestDispatcher view = req.getRequestDispatcher(nextPage);
 		view.forward(req, resp);
-		//PrintWriter pw = resp.getWriter();
-		//pw.println("여기까지 오면 성공!! "+ cmd);
 	}
 	
 }
