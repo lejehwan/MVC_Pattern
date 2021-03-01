@@ -1,6 +1,7 @@
 # MVC_Pattern
 
 MVC(Model View Controller) 를 이용한 간단한 게시판 예제       
+
 M : DTO,DAO         
 V : jsp   
 C : servlet                   
