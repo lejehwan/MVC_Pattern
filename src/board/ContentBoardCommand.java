@@ -17,6 +17,7 @@ public class ContentBoardCommand implements BoardCommandIf {
 		BoardDBBean dto = null;
 		try {
 			dto = dao.getBoard(Integer.parseInt(num));
+			dao.plusReadCount(Integer.parseInt(num));
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}

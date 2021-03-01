@@ -147,6 +147,20 @@ public class BoardDataBean {
 			if (con != null) con.close();
 		}
 	}
+	
+	public int plusReadCount(int num) throws SQLException{
+		try {
+			String sql = "update board set readcount = readcount + 1 where num =?";
+			con = ds.getConnection();
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, num);
+			int res = ps.executeUpdate();
+			return res;
+		} finally {
+			if (ps != null) ps.close();
+			if (con != null) con.close();
+		}
+	}
 }
 
 
