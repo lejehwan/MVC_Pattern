@@ -26,7 +26,7 @@ jsp + javaBean의 경우
 Controller가 View와 Model의 중심점 역할을 하다보니 View와 Model이 dependency(의존성)를(을) 띄게 되고    
 MVC가 복잡하고 방대해지면 소스분석 및 수정/테스트가 어려워진다. 이를 MVC(Massive View Controller)라 함                  
 
-===================================================================
+===================================================================   
 index.jsp -> BoardServlet(cmd) -> CommandFactory(cmdIf)               
           -> BoardServlet(cmdif) -> 해당Command(nextPage)               
           -> BoardServlet(nextPage) -> 해당page가 실행(View)
