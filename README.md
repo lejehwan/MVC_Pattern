@@ -17,6 +17,7 @@ content varchar2(4000) not null,
 ip varchar2(20) not null);              
                     
 create sequence mvc_board_seq;    
+        
 =============================================================     
           
 Model : 무엇을 할 것인지 정의(DTO,DAO)         
