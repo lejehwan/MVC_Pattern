@@ -4,7 +4,7 @@ MVC(Model View Controller) 를 이용한 간단한 게시판 예제
 ==================================================================              
 
 db는 다음과 같다          
-=============================================================         
+        
 create table board            
 (num number primary key,      
 writer varchar2(10) not null,           
@@ -16,7 +16,8 @@ readcount number default 0,
 content varchar2(4000) not null,        
 ip varchar2(20) not null);              
                     
-create sequence mvc_board_seq;                    
+create sequence mvc_board_seq;    
+=============================================================     
           
 Model : 무엇을 할 것인지 정의(DTO,DAO)         
 View : 화면에 무엇을 보여줄 것인지 정의(jsp)   
